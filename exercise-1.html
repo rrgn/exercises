@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+    /*
+    Change the text of the button to "Please click me!". Just write the JavaScript code directly inside this script tag.
+
+    */
+    $(document).ready(function () {
+      $('#the-button').text("Please Click ME!")
+
+    });
+    </script>
+    <style>
+      button {
+        background: linear-gradient(#c00, #fff);
+        font-size: 1.5em;
+        border-radius: 5px;
+        transition: 1.5s;
+
+      }
+
+      button:hover {
+        box-shadow: 0px 2px 2px black;
+        font-size: 2.5em;
+        transform: rotate(45deg) scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="the-button">meh</button>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Steps:
+1. Wait for the document to by ready http://api.jquery.com/ready/
+  2. Find the button in the element by calling `$()` function with an appropriate CSS selector
+    3. Change its text using the `.text()` method: http://api.jquery.com/text
+
+Methods Needed:
+
+* http://api.jquery.com/jQuery/
+* http://api.jquery.com/ready/
+* http://api.jquery.com/text/
+
+-->
